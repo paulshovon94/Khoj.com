@@ -1,0 +1,33 @@
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `username` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+
+
+CREATE TABLE `restaurent` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `restaurent_name` varchar(100) NOT NULL,
+  `area_name` varchar(100) NOT NULL,
+  `trade_mark_dish` varchar(100) NOT NULL,
+  `rating` varchar(100) NOT NULL,
+  `phone_No` varchar(100) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `post_code` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+
+INSERT INTO `restaurent` (`id`, `restaurent_name`, `area_name`,
+ `trade_mark_dish`, `rating`, `phone_No`, `address`, `post_code`)
+ VALUES (NULL, 'Fakruddin Biryani & Restaurant', 'Banasree', 'Biriyani',
+ '2.9', ' 01740000004', 'H - 08, Block - E, Main Road, Banasree, Rampura, Dhaka', '1229'),
+ (NULL, 'fajitas', 'Banasree', 'Tacos',
+ '2.5', '01764069766', 'House#1,Road#5,Block#F,Banasree, Dhaka', '1229'),
+(NULL, 'Mithus Tea stall', 'Rampura', 'Tea, Biscuit',
+ '5', '017640697**', 'A/2, Jahurul Islam Avenue Jahurul Islam City, Aftabnagar, Dhaka', '1212');
